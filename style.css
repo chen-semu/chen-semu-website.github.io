@@ -152,7 +152,7 @@ a {
   #div4 {
   overflow: hidden;
   display: flex;
-  background-size: 40vw 40vw;
+  background-size: 60vw 60vw;
   animation: glry 20s infinite;
   width: 60vw;
   height: 60vw;
