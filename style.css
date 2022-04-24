@@ -1,0 +1,152 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header header header"
+    "main main main main sidebar"
+    "main main main main sidebar"
+    "main main main main sidebar"
+    "main main main main sidebar"
+    "footer footer footer footer footer";
+  width: 99vw;
+  height: 100vh;
+  float: left;
+}
+#prsnl-pic {
+  width: 20vw;
+  height: 20vw;
+  border: 2px solid blue;
+  border-radius: 35vw;
+  transition: all 5s;
+}
+#prsnl-pic:hover {
+  width: 35vw;
+  height: 35vw;
+  box-shadow: 2vw 2vw 2vw black;
+}
+#header {
+  background: rgb(58, 58, 255);
+  color: white;
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.a {
+  width: 5vh;
+  height: 5vh;
+}
+.fcbk {
+  width: 5vh;
+  height: 5vh;
+}
+#h1 {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+#footer {
+  background: rgb(58, 58, 255);
+  color: white;
+  grid-area: footer;
+  display: flex;
+}
+.p2 {
+  background-color: rgb(58, 58, 255);
+  text-decoration: none;
+  display: block;
+}
+#sidebar {
+  background-color: whitesmoke;
+  color: whitesmoke;
+  grid-area: sidebar;
+}
+.sidebar2 {
+  display: none;
+}
+#main {
+  background: url(sky3.jpg);
+  grid-area: main;
+  text-align: center;
+  align-items: center;
+}
+#div2 {
+  flex-wrap: wrap;
+}
+.div-glry {
+  width: 80vh;
+  height: 50vh;
+}
+a {
+  color: rgb(255, 255, 255);
+}
+.pic-glry {
+  width: 50vh;
+  height: 50vh;
+}
+#div4 {
+  overflow: hidden;
+  display: flex;
+  background-size: 40vw 40vw;
+  animation: glry 20s infinite;
+  width: 40vw;
+  height: 40vw;
+}
+@keyframes glry {
+  0% {
+    background-image: url(second-pic.jpg);
+  }
+  25% {
+    background-image: url(hourse2.jpg);
+  }
+  50% {
+    background-image: url(hommies.jpg);
+  }
+  75% {
+    background-image: url(me-n-my-love.jpg);
+  }
+  95% {
+    background-image: url(hourse3.jpg);
+  }
+  100% {
+    background-image: url(hourse3.jpg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    grid-template-areas:
+      "header header header header header"
+      "main main main main main"
+      "main main main main main"
+      "main main main main main"
+      "main main main main main"
+      "footer footer footer footer footer";
+  }
+  #sidebar {
+    display: none;
+  }
+  .sidebar2 {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: start;
+    overflow: hidden;
+    transition: all 4s;
+    width: 5vh;
+    height: 5vh;
+  }
+  .sidebar2:hover {
+    width: 13vh;
+    height: 40vh;
+    background: whitesmoke;
+    color: whitesmoke;
+    overflow: visible;
+  }
+  .div-glry {
+    width: 80vw;
+    height: 90vw;
+  }
+  .pic-glry {
+    width: 80vw;
+    height: 80vw;
+  }
+}
